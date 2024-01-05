@@ -951,6 +951,11 @@ a:hover {
 }
 
 .work-img {
+  /* width: 296px; */
+  /* height: 192px; */
+  width: 100%; /* Set the width to fill the container */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover;
   display: block;
   overflow: hidden;
 }
