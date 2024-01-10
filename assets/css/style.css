@@ -149,6 +149,14 @@ a:hover {
   font-size: 1.1rem;
 }
 
+/*--/ Title s for the subline of author/--*/
+.title-ssub {
+  font-weight: 600;
+  color: #fff;
+  margin: 1rem 1rem;
+  font-size: 1.1rem;
+}
+
 /*--/ Title A /--*/
 .title-box {
   margin-bottom: 4rem;
@@ -1080,7 +1088,7 @@ a:hover {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
   display: block;
   font-size: 1.4rem;
 }
@@ -1099,19 +1107,19 @@ a:hover {
 
 @media (min-width: 768px) {
   .testimonial-box .description {
-    padding: 0 5rem;
+    padding: 1rem 5rem;
   }
 }
 
 @media (min-width: 992px) {
   .testimonial-box .description {
-    padding: 0 8rem;
+    padding: 1rem 8rem;
   }
 }
 
 @media (min-width: 1200px) {
   .testimonial-box .description {
-    padding: 0 13rem;
+    padding: 1rem 13rem;
   }
 }
 
