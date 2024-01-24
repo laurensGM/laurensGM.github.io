@@ -839,10 +839,16 @@ a:hover {
 
 .about-mf .about-img {
   margin-bottom: 2rem;
+
 }
 
 .about-mf .about-img img {
   margin-left: 10px;
+  height: 15rem;
+}
+
+.info {
+  margin-left: 20px;
 }
 
 @media (min-width: 767px) {
@@ -856,17 +862,6 @@ a:hover {
   color: #4e4e4e;
 }
 
-.skill-mf .progress {
-  background-color: #cde1f8;
-  margin: 0.5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: 0.7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: 0.7rem;
-  background-color: #0078ff;
-}
 
 /*--------------------------------------------------------------
 # Services
