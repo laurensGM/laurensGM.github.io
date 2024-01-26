@@ -1308,10 +1308,15 @@ figcaption {
 /*--------------------------------------------------------------
 # Blog Single
 --------------------------------------------------------------*/
+.article-content {
+  text-align: justify;
+}
+
 .post-box,
 .form-comments,
 .box-comments,
 .widget-sidebar {
+  /* position: sticky; */
   padding: 2rem;
   background-color: #fff;
   margin-bottom: 3rem;
@@ -1456,7 +1461,7 @@ figcaption {
   border-radius: 15px;
 }
 
-.widget-tags ul li a {
+.widget-tags ul li {
   color: #fff;
 }
 
