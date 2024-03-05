@@ -1448,3 +1448,21 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+
+
+/*--------------------------------------------------------------
+# Skills page
+--------------------------------------------------------------*/
+
+#sidebar {
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 80px); /* Adjust height as needed */
+  overflow-y: auto;
+}
+
+@media (max-width: 992px) {
+  #sidebar {
+      display: none; /* Hide sidebar on smaller screens */
+  }
+}
