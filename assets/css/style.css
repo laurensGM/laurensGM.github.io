@@ -1377,6 +1377,12 @@ figcaption {
 }
 
 /*------/ Sidebar /------*/
+.sticky-sb {
+position: sticky;
+  top: 80px; /* Adjust as needed to avoid overlapping with the sticky header */
+  height: calc(100vh - 80px); /* Adjust height as needed */
+  overflow-y: auto;
+}
 .widget-sidebar .sidebar-title {
   font-size: 1.6rem;
   font-weight: 600;
@@ -1454,12 +1460,6 @@ footer .credits a {
 # Skills page
 --------------------------------------------------------------*/
 
-#sidebar {
-  position: sticky;
-  top: 0;
-  height: calc(100vh - 80px); /* Adjust height as needed */
-  overflow-y: auto;
-}
 
 @media (max-width: 992px) {
   #sidebar {
