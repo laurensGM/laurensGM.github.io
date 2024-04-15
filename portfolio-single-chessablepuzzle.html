@@ -60,7 +60,7 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Chessable content creation</h2>
+          <h2 class="hero-title mb-4">Chessable puzzle connect</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
               <a href="index.html">Home</a>
@@ -68,7 +68,7 @@
             <!-- <li class="breadcrumb-item"> 
               <a href="#">Library</a>
             </li> -->
-            <li class="breadcrumb-item active">Chessable content creation</li>
+            <li class="breadcrumb-item active">Chessable puzzle connect</li>
           </ol>
         </div>
       </div>
@@ -85,7 +85,7 @@
             <div class="post-box">
 
               <div class="post-meta">
-                <h1 class="article-title"> Strategic content mastery: fueling Chessable's course catalog growth </h1>
+                <h1 class="article-title"> Turn game mistakes into trainbale and learn from your mistakes </h1>
                 <ul>
                   <li>
                     <span class="bi bi-person"></span>
@@ -93,7 +93,7 @@
                   </li>
                   <li>
                     <span class="bi bi-tag"></span>
-                    <a href="#">Growth</a>
+                    <a href="#">Persnoalized learning experience</a>
                   </li>
                 </ul>
               </div>
@@ -114,78 +114,127 @@
                     </figure>
 
                 </p>
+                <h4>
+                  Problem statement
+                </h4>
                 <p>
-                  Chessable is a 2-sided platform where chess learners can consume premium chess content and chess authors can create chess courses.
-                  Creating a course on Chessable was a painful and time consuming process. 
-                  
+                  Although the platform was gaining popularity and the course catalog was expanding rapidly (see  <a href="portfolio-single-chessablecc.html">the content creation case study</a>),
+                  we heard the repeated feedback from users that the content is not always that relatable. With hundreds of courses and thousands of trainable 
+                  variations available on the platform, it's understandable that most of the content is not very personalized to the user's needs.
+                  Moreover, it was repeatedly reported that users didn't always understand the real reasons why certain variations were suggested, despite the added commentary
+                  from the course authors. A lack of personalzation was a recurring theme in the user feedback and posed one of the main challenges for me 
+                  as the product manager for the web platform. 
                 </p>
                 <h4>
                   My role
                 </h4>
                 <p>
-                  As a Product Manager at Chessable, I spearheaded a transformative initiative to overhaul the course creation process on our platform, collaborating closely with the head of design and cross-functional teams. 
-                  Recognizing the crucial role of user feedback, together with the head of design, I conducted extensive interviews with content creators, editors, quality assurance teams, and coaches involved in crafting chess courses.
-                  Our approach involved categorizing existing tools into Export, Editing Variations, and Import tools. 
-                  We listed needs and expectations, pain points, opportunities and potential improvements for each of the internal tools. 
-                  The interviews provided an abundance of insights which were subsequently prioritised in Product Board based on the RICE framework. 
+                  As the Product Manager at Chessable, 
+                  I led the initiative to enhance customizability and improve user engagement on the platform. 
+                  Collaborating closely with the product designer, 
+                  we employed a user-centered design approach to thoroughly investigate the problem and identify key pain points 
+                  and user needs. 
+                  Early involvement of the tech lead ensured alignment across the cross-functional team and facilitated 
+                  a shared understanding of both usability and feasibility. 
+                  With a clear understanding of the primary problem, 
+                  we ideated and implemented a solution to address it effectively.
+
+                </p>
+                <h4>
+                  Problem discovery
+                </h4>
+                <p>
+                  A well-defined problem identifies the target user persona and their specific needs. 
+                  To gather insights, we analyzed both qualitative and quantitative data. 
                   
-                
-                  The image below shows the evolution of the evaluation of those content creation tools from June 2020 to September 2020.
+                  Recognizing that our users were avid chess players who often played online, 
+                  we conducted over 15 interviews to delve deeper into their pain points. 
+                  One of the outcomes of the interviews was to define different user personas. 
+                  In close collaboration with product design and research, I mapped out 3 key user personas: the beginner, the learner and the player. 
+                  The illustration below shows the outcome of the profile for the user persona 'The Player'.
                   <figure class="post-thumb">
-                    <img src="assets/img/chessabletoolsscoring.png" class="img-fluid" alt="">
-                    <figcaption>The evaluation score for the content creators at Chessable increased drastically from June till September.</figcaption>
+                    <img src="assets/img/chessablepersonaplayer.png" class="img-fluid" alt="">
+                    <figcaption>The profile of the user persona 'The Player'.</figcaption>
                   </figure>
+                  Even though I already have a certain view of the problem being a chess player myself and 
+                  having experienced the pain points myself, I always learned something new from these interviews.
+                  Despite my own familiarity with the challenges as a chess player, these interviews provided valuable insights. 
+                  The main challenge identified was the disconnect between users' chess playing (online chess playing platforms like Lichess and Chess.com) and learning (Chessable) activities, 
+                  prompting us to seek a solution that bridged that gap. 
+                  Additionally, quantitative data revealed suboptimal user retention rates (looking at a standard user retention curve for a cohort of power 
+                  users assuming the natural frequency of use to be daily), 
+                  further emphasizing the importance of addressing this issue.
+
                 </p>
+                <h4>
+                  Solution discovery 
+                </h4>
                 <p>
-                  To gauge the effectiveness of these tools, we implemented an evaluation score by the content team, which we administered twice—first in June 2020 and then in September 2020. 
-                  The results were staggering; we witnessed a substantial increase in the evaluation score for the content creation team, soaring from 3.5 to an impressive 6.8 within a span of just four months.
-                </p>
-                <p>
-                Once the content creation process was optimised, we looked into international expansion of our course content.
-                Recognizing a lucrative but untapped market within the chess-loving community in Spain, we identified an opportunity to cater specifically to the Spanish audience. 
-                  Despite Spain's rich chess tradition and a proven market for chess products, our platform lacked Spanish content.
-                </p>
+                  Now that the problem is well-defined and targeted towards a specific user persona, 
+                  our next focus is on generating solutions. In the realm of chess software, 
+                  each chess game is represented by a PGN (Portable Game Notation) file, 
+                  with each position denoted by a FEN (Forsyth–Edwards Notation). 
+                  AI-powered chess engines evaluate every position in the game, 
+                  which means that each move alters the engine's evaluation of the position. 
+                  A significant change in the chess engine's evaluation signals a mistake by one of the players. 
+                  Leveraging this principle, we can easily identify the mistakes users make in their games. 
+                  Converting these mistakes into trainable content for Chessable was straightforward, 
+                  as our learning platform is built entirely around chess variations in the PGN format.
+                  
+                  <h4>
+                    Prioritization 
+                  </h4>
                   <p>
-                The goal was to enable Spanish content on our platform, encompassing both original content crafted in Spanish and translated content from English. 
-                This also extended to ensuring video content was tailored for Spanish consumption.
-                Initiating the process, I engaged with Spanish content creators, our team of translators, and the Spanish publishing manager. 
-                A well-defined workflow was established to seamlessly integrate web UI and course content into a translation queue. 
-                External tools such as Lokalize and Crowdin were strategically employed to manage translations for the web UI and courses, respectively. 
-                Additionally, I meticulously groomed various stories to enhance the discoverability of Spanish content for our users. 
-                Aligning the release with marketing efforts, I orchestrated the presentation of our Spanish launch on the shop page, incorporating a sales banner for added visibility.
+                  The next step is to prioritize this idea among the myriad of others on our public product board portal at Chessable (see <a href="https://portal.productboard.com/chessable/1-chessable/tabs/1-under-consideration">here</a>). 
+                </p>
+                  <figure class="post-thumb">
+                    <img src="assets/img/chessableportallaunched.png" class="img-fluid" alt="">
+                    <figcaption>The Chessable product board portal showcasing various feature ideas and their popularity among Chessable's users.</figcaption>
+                  </figure>
+                  <p>
+                  To accomplish this, I utilized the RICE framework, which evaluates ideas based on their Reach, Impact, Confidence, and Effort required for implementation. 
+                  To gauge user desirability, we posted the idea on the product board portal and observed overwhelming support, with over a hundred votes, 
+                  making it the most requested feature. 
                   </p>
+                  <figure class="post-thumb">
+                    <img src="assets/img/chessableportalscreenshot.png" class="img-fluid" alt="">
+                    <figcaption>The 'Turn game mistakes into trainables' feature idea with 107 votes from users.</figcaption>
+                  </figure>
+                  <p>
+                  This indicates a potentially huge user impact.     
+                   The reach would be moderate because the target user
+                  for this feature was 'The Player' persona which comprised only around 33% of our entire active user base. The confidence in our
+                  reach and impact estimates was rather high given the extensive user research conducted as well as the data-based evidence of the user problem. 
+                   Additionally, this feature holds strategic significance as it facilitates connectivity with other platforms such as Lichess and Chess.com. 
+                   Based on the high RICE score and the strategic importance of the feature,
+                   we decided to go ahead and build the feature after gaining alignment with all the stakeholders.
+
+                  </p>
+               
+              
+               
                 <h4>
                   Outcomes
                 </h4>
+             
                 <p>
-                  This improvement in content creation tools had a cascading impact on Chessable's performance metrics. 
-                  The enhanced tools not only facilitated an accelerated publishing schedule but also contributed to an extraordinary 132% year-over-year growth in revenue. 
-                  The content creation team, once comprised of 7 individuals, burgeoned to 32 members, a testament to the efficacy of our improvements.
+                  The implementation of the 'Turn game mistakes into trainables' personalized learning feature resulted in 
+                  a substantial improvement in customer retention rates. 
+                  Specifically, we saw a 9% increase in customer retention (based on the standard retention curve for the 'The Player' user cohort)
+                  following the rollout of the new feature. 
+                  By offering users personalized lessons that directly addressed their gameplay weaknesses, 
+                  we were able to enhance engagement and foster a deeper connection with the platform.
                 </p>
-                <p>
-                  Furthermore, the number of courses published surged, reflecting the growing confidence of users in utilizing the revamped content creation tools. 
-                  Notably, even top-tier chess grandmasters embraced these tools, elevating the professionalism of the platform. 
-                  </p>
-                <p>
-
-                  The visual below illustrates the impact of Chessable's course expansion on the Play Magnus Group's overall revenue. 
-                  The blue and grey bars represent the revenue generated from chessable course sales and subscription sales, respectively. 
-                  As depicted, both revenue streams witnessed substantial growth during the final quarter of 2020 and the initial quarter of 2021. 
-                  A noteworthy contributor to this expansion stems from enhancements in course creation and the successful international expansion initiatives.
-                </p>
-                  <figure class="post-thumb">
-                    <img src="assets/img/chessablegrowthnumbers.png" class="img-fluid" alt="">
-                    <figcaption>Growth of Chessable course and subscription revenue in the end of 2020 and beginning of 2021.</figcaption>
-                  </figure>
-                  <p>
-                  Spanish users now have access to dedicated Spanish content, resulting in an additional revenue stream of approximately €20,000 per month. 
-                  Furthermore, with the established infrastructure, we are well-equipped to replicate this success in other languages, with German being a potential target for future translations. 
-                  This not only expanded our market reach but also fortified our platform's global appeal.
-                  </p>
+            
+              
                   <h4>Conclusion</h4>
                   <p>
-                  This project showcases my ability to drive positive change through strategic product management, collaboration, and a user-centric approach. It exemplifies how a thoughtful redesign of tools can not only enhance user satisfaction but also translate into substantial business growth and international expansion.
-                </p>
+                    This case study demonstrates the effectiveness of leveraging user-generated data to enhance personalized 
+                    learning experiences. 
+                    By understanding user needs and leveraging data-driven insights, 
+                    Chessable was able to drive significant improvements in user engagement and retention, 
+                    ultimately leading to a more successful and impactful platform.
+                   </p>
                 <h4>
                   Links
                 </h4>
@@ -193,6 +242,9 @@
                   <ul>
                     <li>
                       <a href="https://chessable.com">Chessable</a> 
+                    </li>
+                    <li>
+                      <a href="https://portal.productboard.com/chessable/1-chessable/tabs/1-under-consideration">Chessable's portal on Product Board</a>
                     </li>
 
                   </ul>                  
@@ -212,16 +264,13 @@
                     Chessable
                   </li>
                   <li>
-                    June - September 2020
+                    August - October 2021
                   </li>
                   <li>
-                    Evaluation score for content creator tools increased from 3.5 to 6.8
+                    Improved user retention of power user cohort with 9%. 
                   </li>
                   <li>
-                    Improved course creation process contributed to 132 % Y/Y growth in overall company revenue
-                  </li>
-                  <li>
-                    International expansion in Spain led an additional monthly revenue of 20.000 euro
+                    Collaborated closely with our power user base at Chessable to improve the product.
                   </li>
                 </ul>
               </div>
@@ -231,35 +280,27 @@
               <div class="sidebar-content">
                 <ul>
                   <li>
-                    B2B
-                  </li>
-                  <li>
-                    SaaS
-                  </li>
-                  <li>
-                    User Journey Mapping
+                    User interviews
                   </li>
                   <li>
                     EdTech
                   </li>
                   <li>
-                    Growth
+                    User centered design
                   </li>
                   <li>
                     2 sided platform
                   </li>
                   <li>
-                    Internal tools
+                    User retention
                   </li>
                   <li>
-                    Localisation
+                    Product discovery
                   </li>
                   <li>
-                    Internationalisation
+                    Personalization
                   </li>
-                  <li>
-                    Content creation
-                  </li>
+                 
                 </ul>
               </div>
             </div>
@@ -275,7 +316,7 @@
                     <a href="portfolio-single-stsmjb.html">Studysmarter - Job board</a>
                   </li>
                   <li>
-                    <a href="portfolio-single-chessablepuzzle.html">Chessable - Puzzle connect</a>
+                    <a href="portfolio-single-chessablecc.html">Chessable - Content creation</a>
                   </li>
                   <li>
                     <a href="portfolio-single-chessimo.html">Chessimo - Strategy</a>
