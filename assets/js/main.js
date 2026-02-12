@@ -218,13 +218,19 @@
   });
 
   /**
-   * Preloader
+   * Preloader: hide when page is ready or after max 2s (avoids long wait on slow connections)
    */
   let preloader = select('#preloader');
   if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
+    let preloaderDone = false;
+    const hidePreloader = () => {
+      if (!preloaderDone && preloader) {
+        preloaderDone = true;
+        preloader.remove();
+      }
+    };
+    window.addEventListener('load', hidePreloader);
+    window.setTimeout(hidePreloader, 2000);
   }
 
   /**
