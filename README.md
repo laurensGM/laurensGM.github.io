@@ -22,3 +22,9 @@ The contact section uses a form that sends submissions to your email via [Formsp
 2. Create a new form and set your email as the recipient.
 3. Copy your form ID (e.g. `xyzabcde` from `https://formspree.io/f/xyzabcde`).
 4. In `index.html`, find `action="https://formspree.io/f/FORM_ID"` in the contact form and replace `FORM_ID` with your form ID.
+
+## Featured case study (Alliance Bioversity & CIAT)
+
+Content lives in `portfolio-single-featured.html`; the portfolio card is first on `index.html`.
+
+**Images:** put files in `assets/img/portfolio-bioversity-ciat/` — see `README.md` in that folder (`hero.jpg`, `figure-02.jpg`). Replace the placeholder JPEGs with your real visuals; keep filenames or update HTML paths.
