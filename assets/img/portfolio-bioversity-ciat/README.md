@@ -4,8 +4,8 @@ Place your images here and keep these filenames (or update paths in `index.html`
 
 | File | Used for |
 |------|----------|
-| **`hero.jpg`** | Portfolio card thumbnail, case study page hero background, and first main image in the article |
-| **`figure-02.jpg`** | Second image in the case study (e.g. diagram, platform screenshot, field context) |
+| **`hero.jpeg`** | Portfolio card thumbnail, case study page hero background, and first main image in the article |
+| **`figure-02.jpeg`** | Second image in the case study (e.g. diagram, platform screenshot, field context) |
 
 **Tips**
 
@@ -13,4 +13,4 @@ Place your images here and keep these filenames (or update paths in `index.html`
 - **Hero / card**: wide image works best (~1200–1920px wide). **Card grid** crops to the work-box; a 16:9 or 3:2 crop usually looks good.
 - After replacing files, keep the same names so you don’t need to edit HTML again.
 
-Current files are **placeholders** (copies of a stock image). Replace them with your real screenshots or photos.
+Filenames must match what’s referenced in `index.html` and `portfolio-single-featured.html` (currently `.jpeg`).

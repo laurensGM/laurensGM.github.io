@@ -27,4 +27,4 @@ The contact section uses a form that sends submissions to your email via [Formsp
 
 Content lives in `portfolio-single-featured.html`; the portfolio card is first on `index.html`.
 
-**Images:** put files in `assets/img/portfolio-bioversity-ciat/` — see `README.md` in that folder (`hero.jpg`, `figure-02.jpg`). Replace the placeholder JPEGs with your real visuals; keep filenames or update HTML paths.
+**Images:** put files in `assets/img/portfolio-bioversity-ciat/` — see `README.md` in that folder (`hero.jpeg`, `figure-02.jpeg`). Replace the placeholder JPEGs with your real visuals; keep filenames or update HTML paths.
