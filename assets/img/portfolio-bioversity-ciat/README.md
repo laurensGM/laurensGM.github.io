@@ -6,6 +6,7 @@ Place your images here and keep these filenames (or update paths in `index.html`
 |------|----------|
 | **`hero.jpeg`** | Portfolio card thumbnail, case study page hero background, and first main image in the article |
 | **`figure-02.jpeg`** | Second image in the case study (e.g. diagram, platform screenshot, field context) |
+| **`alliance-webinar2.png`** | Featured at the **bottom** of the case study page (`portfolio-single-featured.html`) — webinar / presentation visual |
 
 **Tips**
 
