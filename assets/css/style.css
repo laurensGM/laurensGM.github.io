@@ -998,6 +998,77 @@ a:hover {
   font-size: 1.2rem;
 }
 
+/* Featured portfolio card: full row, larger than standard 3-column cards */
+.work-box-featured {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 10px 36px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.work-box-featured:hover img {
+  transform: scale(1.04);
+}
+
+.work-img-featured {
+  height: 100%;
+  min-height: 240px;
+}
+
+@media (min-width: 992px) {
+  .work-img-featured {
+    min-height: 320px;
+  }
+
+  .work-box-featured .row.align-items-stretch {
+    min-height: 320px;
+  }
+}
+
+.work-img-featured img {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.work-featured-media {
+  min-height: 240px;
+}
+
+@media (min-width: 992px) {
+  .work-featured-media {
+    min-height: 320px;
+  }
+}
+
+.work-content-featured {
+  padding: 2rem 2rem 2.5rem;
+}
+
+@media (min-width: 992px) {
+  .work-content-featured {
+    padding: 2.5rem 2.5rem 3rem;
+  }
+}
+
+.w-title-featured {
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  line-height: 1.25;
+}
+
+.w-title-featured a {
+  color: #1e1e1e;
+}
+
+.w-title-featured a:hover {
+  color: #0078ff;
+}
+
+.work-content-featured .w-more {
+  font-size: 0.95rem;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
