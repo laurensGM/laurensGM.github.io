@@ -745,7 +745,7 @@ a:hover {
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  height: 100vh;
+  height: 70vh; /* 30% shorter than full viewport height */
   position: relative;
   color: #fff;
 }
@@ -772,9 +772,20 @@ a:hover {
   font-size: 3rem;
 }
 
+.hero .hero-pretitle {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
 @media (min-width: 768px) {
   .hero .hero-title {
     font-size: 4.5rem;
+  }
+
+  .hero .hero-pretitle {
+    font-size: 1.35rem;
   }
 }
 
