@@ -796,9 +796,8 @@ a:hover {
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: 50% 18% !important;
-  transform: scale(1.5) !important; /* force stronger zoom so change is obvious */
-  transform-origin: center;
+  object-position: center;
+  transform: none;
 }
 
 @media (min-width: 768px) {
