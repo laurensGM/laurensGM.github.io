@@ -176,6 +176,48 @@
   }
 
   /**
+   * Portfolio category filters
+   */
+  const portfolioFilters = select('#work .portfolio-filter', true)
+  const portfolioItems = select('#work .portfolio-item', true)
+  const portfolioStatus = select('#portfolio-filter-status')
+  const portfolioEmpty = select('#portfolio-filter-empty')
+  const portfolioFilterLabels = {
+    all: 'Showing all case studies',
+    ai: 'Showing AI and research case studies',
+    edtech: 'Showing EdTech case studies',
+    saas: 'Showing SaaS and growth case studies'
+  }
+
+  const applyPortfolioFilter = (filter) => {
+    let visible = 0
+    portfolioItems.forEach(item => {
+      const categories = (item.getAttribute('data-category') || '').split(/\s+/).filter(Boolean)
+      const show = filter === 'all' || categories.includes(filter)
+      item.hidden = !show
+      if (show) visible += 1
+    })
+    if (portfolioEmpty) portfolioEmpty.hidden = visible !== 0
+    if (portfolioStatus) {
+      portfolioStatus.textContent = visible === 0
+        ? 'No case studies in this category'
+        : (portfolioFilterLabels[filter] || 'Showing case studies')
+    }
+  }
+
+  if (portfolioFilters.length && portfolioItems.length) {
+    on('click', '#work .portfolio-filter', function() {
+      const filter = this.getAttribute('data-filter')
+      portfolioFilters.forEach(btn => {
+        const active = btn === this
+        btn.classList.toggle('is-active', active)
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false')
+      })
+      applyPortfolioFilter(filter)
+    }, true)
+  }
+
+  /**
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({

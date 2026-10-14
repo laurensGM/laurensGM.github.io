@@ -23,7 +23,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css?v=20261014e" rel="stylesheet">
+  <link href="assets/css/style.css?v=20261014f" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: DevFolio
@@ -99,15 +99,23 @@
                 Portfolio
               </h3>
               <p class="subtitle-a">
-                A selection from some of my best work.
+                A selection of my strongest work across domains.
               </p>
               <div class="line-mf"></div>
+              <div class="portfolio-filters" role="group" aria-label="Filter case studies by category">
+                <button type="button" class="portfolio-filter is-active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="portfolio-filter" data-filter="ai" aria-pressed="false">AI &amp; Research</button>
+                <button type="button" class="portfolio-filter" data-filter="edtech" aria-pressed="false">EdTech</button>
+                <button type="button" class="portfolio-filter" data-filter="saas" aria-pressed="false">SaaS &amp; Growth</button>
+              </div>
+              <p id="portfolio-filter-status" class="visually-hidden" aria-live="polite">Showing all case studies</p>
             </div>
           </div>
         </div>
-        <div class="row">
+        <p id="portfolio-filter-empty" class="portfolio-filter-empty" hidden>No case studies in this category yet.</p>
+        <div class="row" id="portfolio-grid">
           <!-- PhD Manager: latest case study, full row -->
-          <div class="col-12">
+          <div class="col-12 portfolio-item" data-category="ai edtech">
             <div class="work-box work-box-featured position-relative">
               <div class="row g-0 align-items-stretch">
                 <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1 h-100">
@@ -140,7 +148,7 @@
             </div>
           </div>
           <!-- Featured case study: full row (width of 3 standard cards) -->
-          <div class="col-12">
+          <div class="col-12 portfolio-item" data-category="ai">
             <div class="work-box work-box-featured position-relative">
               <span class="badge bg-primary position-absolute top-0 start-0 m-3" style="z-index: 3;">Featured</span>
               <div class="row g-0 align-items-stretch">
@@ -173,7 +181,7 @@
             </div>
           </div>
           <!-- Sikia case study: full row -->
-          <div class="col-12">
+          <div class="col-12 portfolio-item" data-category="ai">
             <div class="work-box work-box-featured position-relative">
               <span class="badge bg-secondary position-absolute top-0 start-0 m-3" style="z-index: 3;">Sikia</span>
               <div class="row g-0 align-items-stretch">
@@ -204,7 +212,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 portfolio-item" data-category="saas">
             <div class="work-box">
               <a href="portfolio-single-onside.html">
                 <div class="work-img">
@@ -226,7 +234,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4"> <!-- make sure your images are at least 416 wide and 300 high -->
+          <div class="col-md-4 portfolio-item" data-category="saas"> <!-- make sure your images are at least 416 wide and 300 high -->
             <div class="work-box">
               <a href="portfolio-single-stsmjb.html">
                 <div class="work-img">
@@ -248,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 portfolio-item" data-category="edtech">
             <div class="work-box">
               <a href="portfolio-single-chessablepuzzle.html">
                 <div class="work-img">
@@ -270,7 +278,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 portfolio-item" data-category="edtech saas">
             <div class="work-box">
               <a href="portfolio-single-chessablecc.html">
                 <div class="work-img">
@@ -292,7 +300,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 portfolio-item" data-category="edtech saas">
             <div class="work-box">
               <a href="portfolio-single-chessimo.html">
                 <div class="work-img">
@@ -314,7 +322,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 portfolio-item" data-category="edtech">
             <div class="work-box">
               <a href="portfolio-single-chessminds.html">
                 <div class="work-img">
@@ -336,7 +344,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 portfolio-item" data-category="">
             <div class="work-box">
               <a href="portfolio-single-biomat.html">
                 <div class="work-img">
@@ -959,7 +967,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/main.js?v=20261014f" defer></script>
 
   <!-- Contact form (Formspree) - submit via fetch and show success/error on page -->
   <script>
