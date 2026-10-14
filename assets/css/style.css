@@ -820,9 +820,37 @@ a:hover {
   font-weight: 600;
 }
 
+.hero .hero-lead {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 767px) {
+  #hero.hero {
+    height: auto;
+  }
+
+  #hero .hero-content {
+    position: relative;
+    height: auto;
+    padding-top: 6.5rem;
+    padding-bottom: 2.75rem;
+  }
+}
+
 @media (min-width: 768px) {
   .hero .hero-subtitle {
     font-size: 2.5rem;
+  }
+
+  .hero .hero-lead {
+    font-size: 1.25rem;
   }
 }
 
